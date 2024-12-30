@@ -62,10 +62,10 @@ const FooterBar = () => {
             </a>
             <div className="list-item-box-content">
               <a
-                href="http://localhost:3000"
+                href="https://Aryan-Enterprises.vercel.app"
                 className="list-item-box-content-value"
               >
-                http://Aryan-Enterprises.vercel.app
+                https://Aryan-Enterprises.vercel.app
               </a>
             </div>
           </div>
