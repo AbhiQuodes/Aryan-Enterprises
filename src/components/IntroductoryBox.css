@@ -152,7 +152,7 @@
   }
   .introductory-title {
     font-size: 28px;
-    animation: typing 2.5s steps(30);
+    /* animation: typing 2.5s steps(30); */
     color: rgb(54, 2, 54);
   }
   .para-img-box {
