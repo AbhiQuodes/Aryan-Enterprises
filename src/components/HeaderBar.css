@@ -155,7 +155,7 @@
     z-index: 10;
   }
   .head-title {
-    font-size: 20px;
-    /* scale: 1.22; */
+    font-size: 18px;
+    scale: 1.22;
   }
 }
