@@ -142,6 +142,7 @@
     font-style: 'open san';
     /* left: 5vw;  */
     left: 20px;
+    letter-spacing: 0.5px;
   }
 
   .head-list {
