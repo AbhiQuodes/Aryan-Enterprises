@@ -118,6 +118,7 @@
   .head-container {
     position: fixed;
     height: 65px;
+    width:100vw;
   }
   .head-box {
     flex-direction: column;
@@ -136,7 +137,7 @@
   .head-title {
     display: block;
     -webkit-tap-highlight-color: transparent;
-    width: 80%;
+    width: 75%;
     position: relative;
     /* left: 5vw;  */
     left: 20px;
@@ -155,6 +156,6 @@
   }
   .head-title {
     font-size: 20px;
-    scale: 1.22;
+    /* scale: 1.22; */
   }
 }
