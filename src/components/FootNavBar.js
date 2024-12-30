@@ -157,7 +157,7 @@ const FootNavBar = ({
                   className="foot-nav-bar-icons aryan-logo"
                   alt="icon-logo"
                 ></img>
-                <label ref={refLabel5} className="foot-nav-bar-icon-label l2">
+                <label ref={refLabel5} className="foot-nav-bar-icon-label l5">
                   Top
                 </label>
               </div>

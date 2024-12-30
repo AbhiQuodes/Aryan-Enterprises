@@ -77,16 +77,20 @@
   .aryan-logo {
     width: 40px;
   }
+  .l5{
+    left:15px !important;
+    bottom:5px;
+
+  }
 
   .foot-nav-list-items :hover .foot-nav-bar-icon-label {
     display: inline-block;
-    scale: 1.25;
+    scale: 1.125;
   }
 }
 
 .aryan-logo:hover {
-  scale: 1.4692;
-  background-blend-mode: color-burn;
+ background-color: grey;
 }
 
 @media (max-width: 600px) {
@@ -120,6 +124,10 @@
     height: 30px;
     margin-top: 10px;
   }
+  .l5{
+    left:15px !important;
+    bottom:5px;
+  }
   .foot-nav-list {
     width: 100%;
     display: flex;
@@ -146,22 +154,23 @@
     position: static;
   }
   .l3,
-  .l2 {
+  .l2  {
     left: 10px !important;
     /* top */
   }
   .foot-nav-bar-icons:hover .foot-nav-bar-icon-label {
     display: inline-block;
+    scale:2;
   }
   .foot-nav-bar-icon-label {
     width: fit-content;
     padding: 5px 0px;
     color: white;
     position: absolute;
-    bottom: -3px;
+    bottom: -5px;
     left: -0px;
     font-size: 8.5px;
-    display: none;
+    display: inline-block;
     /* background-color: rgb(16, 2, 14); */
     border-radius: 10px;
     transition: 1.2 ease-in-out;
