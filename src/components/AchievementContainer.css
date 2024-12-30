@@ -101,7 +101,7 @@
 @media (max-width: 600px) {
   .achievement-container {
     padding: 60px 20px;
-    
+
     padding-top: 55px;
   }
   .achievement-box-title {
@@ -114,6 +114,7 @@
     flex-direction: column;
     gap: 25px;
     padding: 30px 5px;
+    min-width: fit-content;
   }
   .each-achievement-img {
     max-width: 280px;
