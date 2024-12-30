@@ -75,9 +75,9 @@ const FootNavBar = ({
   };
   useEffect(() => {
     handleLabelShow();
-    window.addEventListener("scroll", handleScrollHideFootNav);
+    // window.addEventListener("scroll", handleScrollHideFootNav);
     return () => {
-      window.removeEventListener("scroll", handleScrollHideFootNav);
+      // window.removeEventListener("scroll", handleScrollHideFootNav);
     };
   }, []);
 
