@@ -1,0 +1,122 @@
+.client-container {
+  display: flex;
+  width: 100vw;
+  padding: 20px 30px;
+  padding-top: 100px;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(#fff, rgba(213, 213, 207, 0.199));
+}
+.client-box-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 38px;
+  height: fit-content;
+  color: rgba(54, 2, 54, 1);
+}
+.client-box-list {
+  display: flex;
+  justify-content: space-between;
+  /* min-height:400px; */
+  width: 100%;
+  min-width: 350px;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: black; */
+}
+.client-box-list-item {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  border: 2px solid rgb(196, 186, 186);
+  padding: 20px 40px;
+  gap: 50px;
+}
+.client-icon-img {
+  width: 40%;
+  max-width: 350px;
+  max-height: 80%;
+  border-radius: 15px;
+}
+.client-box-list-item-text {
+  /* text-align: center; */
+  color: #3e3a3a;
+  display: inline-block;
+  max-width: 450px;
+  width: 100%;
+  background: linear-gradient(#f3e9e97a, rgba(213, 213, 207, 0.199));
+  padding: 20px 60px;
+  font-size: 21px;
+  border-radius: 5px;
+  font-weight: 300;
+}
+.client-name-box {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  padding: 20px 30px;
+  padding-bottom: 50px;
+}
+.client-name-box-marquee {
+  display: flex !important ;
+  /* gap:30px; */
+  /* align-items: center; */
+  /* justify-content: baseline; */
+  overflow: hidden;
+  width: 85%;
+  min-width: 350px;
+  /* background-color: #040303; */
+  max-height: 270px;
+}
+.each-client-box {
+  display: flex;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0px 30px;
+  /* padding:10px; */
+  border-radius: 15px;
+  height: 250px;
+  border: 2px solid rgb(196, 186, 186);
+  width: 200px;
+  min-width: 200px;
+}
+.each-client-img {
+  width: 100%;
+  height: 140px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.client-name {
+  text-align: center;
+  color: #040303;
+  padding: 5px 10px;
+  font-weight: 300;
+  text-wrap: wrap;
+  /* color:red; */
+}
+@media (max-width: 800px) {
+  .client-container {
+    padding: 20px 10px;
+    padding-top: 55px;
+  }
+  .client-box-list-item,
+  .client-box-list {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .client-box-list-item,
+  .client-box-list-item-text {
+    padding: 20px 20px;
+    font-size: 16px;
+  }
+
+  .client-icon-img {
+    width: 60%;
+    max-width: 250px;
+    border-radius: 15px;
+  }
+}

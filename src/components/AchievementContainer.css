@@ -1,0 +1,126 @@
+.achievement-container {
+  display: flex;
+  width: 100vw;
+  padding: 60px 30px;
+  padding-top: 100px;
+  border: 2px solid black;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(#fff, rgba(213, 213, 207, 0.199));
+}
+.achievement-box-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 38px;
+  width: 100%;
+  height: fit-content;
+  color: rgba(54, 2, 54, 1);
+}
+.over-lay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.178);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: none;
+  border-radius: 15px;
+  opacity: 0;
+}
+.achievement-box-list {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 80%;
+  /* max-width:800px; */
+  border: 2px solid rgb(196, 186, 186);
+  padding: 40px;
+  background-color: #fff;
+  min-width: 350px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-around;
+  list-style: none;
+  background-color: rgba(33, 6, 6, 0.281);
+}
+.achievement-box-list-item {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* padding: 20px 40px; */
+  position: relative;
+  height: fit-content;
+}
+.achievement-icon-img {
+  width: 40vw;
+  max-width: 250px;
+  max-height: 80%;
+  border-radius: 15px;
+}
+.achievement-text {
+  /* text-align: center; */
+  color: #3e3a3a;
+  display: inline-block;
+  font-size: 21px;
+  max-width: 650px;
+  width: 100%;
+  background: linear-gradient(#f3e9e97a, rgba(213, 213, 207, 0.199));
+  padding: 20px 60px;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+.each-achievement-img {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px black;
+  width: 40vw;
+  max-width: 250px;
+}
+.each-client-img {
+  width: 100%;
+  height: 140px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.each-achievement-img:hover {
+  scale: 1.013;
+}
+.each-achievement-img:hover .over-lay {
+  opacity: 1;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .achievement-container {
+    padding: 60px 20px;
+    padding-top: 55px;
+  }
+  .achievement-box-title {
+
+    font-size: 28px;
+  
+  }
+
+  .achievement-box-list {
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 5px;
+  }
+  .each-achievement-img {
+    max-width: 280px;
+    width: 85vw;
+  }
+  .achievement-box-list-item,
+  .achievement-text {
+    padding: 20px 20px;
+    font-size: 16px;
+  }
+}

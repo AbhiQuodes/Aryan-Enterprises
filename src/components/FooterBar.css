@@ -1,0 +1,130 @@
+.footbar-container {
+  width: 100vw;
+  height: 400px;
+  background: linear-gradient(45deg, rgb(39, 17, 39), rgb(24, 2, 24));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  border-top: 40px solid rgba(2, 0, 0, 0.639);
+  position: relative;
+  z-index: 20;
+}
+.footbar-box-list {
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 10px rgb(9, 1, 6);
+  background-color: rgba(0, 0, 0, 0.258);
+  width: 98.6%;
+  height: 95%;
+}
+.footbar-box-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24%;
+  color: rgb(192, 188, 184);
+  padding: 50px 50px;
+  padding-bottom: 0px;
+  height: 300px;
+  text-align: center;
+  transition: all 0.3 ease 0.1;
+}
+
+.list-item-box {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.footer-icons {
+  display: inline-block;
+  margin-left: 5px;
+  position: relative;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(192, 188, 184);
+  border: 2px solid rgb(192, 188, 184);
+}
+.list-item-box-content-value {
+  color: rgb(192, 188, 184);
+  margin: 25px;
+  display: block;
+  font-size: 15px;
+  letter-spacing: 1.215px;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+b {
+  font-size: 22px;
+  color: rgb(192, 188, 184);
+  letter-spacing: 1.215px;
+  text-align: left;
+}
+.map-frame {
+  display: none;
+  scale: 0.718;
+  transition: all 0.3 ease 0.8;
+  position: absolute;
+  left: 3.78%;
+}
+
+b:hover {
+  font-size: 25px;
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+.footbar-box-list-item:hover {
+  color: #fff;
+}
+a:hover .footer-icons {
+  background-color: #fff;
+  border-color: #fff;
+}
+.list-item-box-content-value:hover .map-frame {
+  display: block;
+}
+@media (max-width: 900px) {
+  .footbar-container {
+    height: fit-content;
+    z-index: 20;
+    /* padding-bottom: 50px; */
+  }
+  .footbar-box-list {
+    flex-direction: column;
+    width: 98%;
+    align-items: center;
+  }
+  .footbar-box-list-item {
+    width: 100%;
+    padding: 10px 5px;
+    height: 215px;
+    min-height: fit-content;
+  }
+  .list-item-box {
+    gap: 20px;
+  }
+  .list-item-box-content-value {
+    margin: 10px;
+    text-align: center;
+    font-size: 13.5px;
+  }
+  b {
+    text-align: left;
+    font-size: 17px;
+  }
+  b:hover {
+    font-size: 20px;
+    color: #fff;
+  }
+  .map-frame {
+    display: block;
+    margin: auto;
+    position: static;
+  }
+}
