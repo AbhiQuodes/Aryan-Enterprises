@@ -139,6 +139,7 @@
     -webkit-tap-highlight-color: transparent;
     width: 70%;
     position: relative;
+    font-style: 'open san';
     /* left: 5vw;  */
     left: 20px;
   }
