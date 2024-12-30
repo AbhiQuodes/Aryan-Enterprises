@@ -103,6 +103,10 @@
     padding: 20px 10px;
     padding-top: 55px;
   }
+  .client-box-title {
+    font-size: 28px;
+
+  }
   .client-box-list-item,
   .client-box-list {
     flex-direction: column;
