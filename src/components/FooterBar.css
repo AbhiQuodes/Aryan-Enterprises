@@ -93,7 +93,7 @@ a:hover .footer-icons {
   .footbar-container {
     height: fit-content;
     z-index: 20;
-    /* padding-bottom: 50px; */
+    padding-bottom: 50px;
   }
   .footbar-box-list {
     flex-direction: column;
