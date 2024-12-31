@@ -23,7 +23,6 @@
   display: flex;
   justify-content: center;
   color: rgb(236, 5, 236);
-
 }
 .introductory-title {
   font-size: 50px;
@@ -48,7 +47,7 @@
 }
 
 .introductory-para {
-  color: #3e3a3a; 
+  color: #3e3a3a;
   line-height: 1.2;
   font-size: 18px;
   letter-spacing: 1.2;
@@ -70,7 +69,6 @@
   height: 100%;
   border-radius: 25px;
   /* box-shadow: 0px 0px 16px black; */
-
 }
 
 @keyframes typing {
@@ -128,10 +126,9 @@
   .para-img {
     width: 300px;
     height: auto;
-    scale:1;
+    scale: 1;
     border-radius: 0px;
     box-shadow: 0px 0px 6px black;
-
   }
 }
 @media (max-width: 600px) {
@@ -173,8 +170,8 @@
     font-size: 16px;
   }
   .para-img {
-    max-width:98vw;
-    scale:1;
+    max-width: 98vw;
+    scale: 1;
     height: auto;
     border-radius: 0px;
     box-shadow: 0px 0px 0px black;

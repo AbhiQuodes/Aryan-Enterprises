@@ -16,40 +16,40 @@ import AirWaterCoolantFilterElements from "../images/AirWaterCoolantFilterElemen
 import BellowsCover from "../images/BellowsCover.jpeg";
 import TelescopicCover from "../images/TelescopicCover.jpeg";
 import SSWireBrush from "../images/SSWireBrush.jpeg";
-// import './HeaderBar.css';
-
-// data-aos="fade-in" data-aos-duration="600" data-aos-easing="ease-in-sine"
 
 const ProductContainer = () => {
   Aos.init();
   const dropDownImg = useRef();
-  const [displayWidth,setDisplayWidth] =useState( window.innerWidth);
-  const [expandedProductBox ,setExpandedProductBox]=useState(null);
-  const handleExpand =(index)=>{
-    setExpandedProductBox( expandedProductBox=== index ? null : index)
-  }
-  const navigatePath=useNavigate();
-  const navigateToPage=()=>{
-    setTimeout(()=>{
-      navigatePath('/products');
-    },500)
-  }
-    const productBoxList  =useRef();
-    const productDetails = [
-      { name: "Measuring Tools", image: MeasuringTools },
-      { name: "Grinding Wheel", image: GrindingWheel },
-      { name: "Cutting Tools", image: CuttingTools },
-      { name: "Hand Tools", image: HandTools },
-      { name: "Pneumatic Tools", image: PneumaticTools },
-      { name: "Band Saw Blades", image: BandSawBlades },
-      { name: "Power Saw Blades", image: PowerSawBlades },
-      { name: "All Filter Elements (Air, Water, Coolant)", image: AirWaterCoolantFilterElements },
-      { name: "Bellows Cover", image: BellowsCover },
-      { name: "Telescopic Cover", image: TelescopicCover },
-      { name: "S.S. Wire Brush", image: SSWireBrush },
-    ];
+  const [displayWidth, setDisplayWidth] = useState(window.innerWidth);
+  const [expandedProductBox, setExpandedProductBox] = useState(null);
+  const handleExpand = (index) => {
+    setExpandedProductBox(expandedProductBox === index ? null : index);
+  };
+  const navigatePath = useNavigate();
+  const navigateToPage = () => {
+    setTimeout(() => {
+      navigatePath("/products");
+    }, 500);
+  };
+  const productBoxList = useRef();
+  const productDetails = [
+    { name: "Measuring Tools", image: MeasuringTools },
+    { name: "Grinding Wheel", image: GrindingWheel },
+    { name: "Cutting Tools", image: CuttingTools },
+    { name: "Hand Tools", image: HandTools },
+    { name: "Pneumatic Tools", image: PneumaticTools },
+    { name: "Band Saw Blades", image: BandSawBlades },
+    { name: "Power Saw Blades", image: PowerSawBlades },
+    {
+      name: "All Filter Elements (Air, Water, Coolant)",
+      image: AirWaterCoolantFilterElements,
+    },
+    { name: "Bellows Cover", image: BellowsCover },
+    { name: "Telescopic Cover", image: TelescopicCover },
+    { name: "S.S. Wire Brush", image: SSWireBrush },
+  ];
   const handleDropDownClick = (event) => {
-    console.log(event)
+    console.log(event);
     if (!dropDownImg.current.classList.contains("rotate-icon")) {
       dropDownImg.current.classList.add("rotate-icon");
       // productBoxList.current.style.display = "flex";
@@ -57,9 +57,7 @@ const ProductContainer = () => {
       dropDownImg.current.classList.remove("rotate-icon");
       // productBoxList.current.style.display = "none";
     }
-
-    
-    }
+  };
   return (
     <section
       className="product-container"
@@ -73,15 +71,21 @@ const ProductContainer = () => {
         </NavLink>
       </div>
       <ul className="product-box-list">
-    {  productDetails.map((eachProduct ,idx) => {
-
-return(
-        <li onClick={()=>{
-          navigateToPage()
-        }} className="product-box-list-item" ref={ productBoxList  } key={idx}>          {/* <img src="dsndhgh" alt="product-img">
+        {productDetails.map((eachProduct, idx) => {
+          return (
+            <li
+              onClick={() => {
+                navigateToPage();
+              }}
+              className="product-box-list-item"
+              ref={productBoxList}
+              key={idx}
+            >
+              {" "}
+              {/* <img src="dsndhgh" alt="product-img">
                  </img>*/}
-          <h3 className="product-name">{eachProduct.name}</h3>
-          {/* <img key={idx}
+              <h3 className="product-name">{eachProduct.name}</h3>
+              {/* <img key={idx}
             ref={dropDownImg}
             src={dropDown}
             alt="dropDown-box-arrow"
@@ -90,14 +94,14 @@ return(
             handleDropDownClick(event);
            }}
           ></img> */}
-    
-          <img className="product-image" src={eachProduct.image} alt="product-img"></img>
-        
-        </li>
-)
-})
-}
-    
+              <img
+                className="product-image"
+                src={eachProduct.image}
+                alt="product-img"
+              ></img>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );
