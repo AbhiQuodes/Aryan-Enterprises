@@ -151,8 +151,8 @@
     width: 26px;
     padding: 0;
     scale: 1;
-    position: static;
-  }
+    position: relative;
+    top: -5px;  }
   .l3,
   .l2  {
     left: 10px !important;
@@ -186,3 +186,4 @@
     border-width: 0;
   }
 }
+

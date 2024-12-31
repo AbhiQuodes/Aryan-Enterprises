@@ -8,6 +8,8 @@
 .container{
   display:flex;
   padding-top:50px;
+  width:100%;
+  background-color: black;
 }
 ::-webkit-scrollbar {
   height: 0px;

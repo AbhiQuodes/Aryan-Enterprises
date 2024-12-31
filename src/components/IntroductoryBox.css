@@ -173,7 +173,7 @@
     font-size: 16px;
   }
   .para-img {
-    width: 350px;
+    max-width:98vw;
     scale:1;
     height: auto;
     border-radius: 0px;

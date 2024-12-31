@@ -136,12 +136,15 @@
   }
   .head-title {
     display: block;
+    /* display: none; */
+    font-size: 18px;
+    scale: 1.32;
     -webkit-tap-highlight-color: transparent;
     width: 70%;
     position: relative;
     font-style: 'open san';
     /* left: 5vw;  */
-    left: 10px;
+    left: 20px;
     letter-spacing: 0.5px;
   }
 
@@ -156,8 +159,13 @@
     backdrop-filter: blur(15px);
     z-index: 10;
   }
-  .head-title {
-    font-size: 18px;
-    scale: 1.22;
+
+}
+@media (max-width: 310px) {
+
+  .head-title{
+    font-size: 14px;
+    scale: 1.422;
+    left:30px;
   }
 }
