@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./ProductContainer.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 import dropDown from "../images/dropDown.png";
 import MeasuringTools from "../images/MeasuringTools.jpeg";
 import GrindingWheel from "../images/GrindingWheel.jpeg";
@@ -26,6 +27,12 @@ const ProductContainer = () => {
   const [expandedProductBox ,setExpandedProductBox]=useState(null);
   const handleExpand =(index)=>{
     setExpandedProductBox( expandedProductBox=== index ? null : index)
+  }
+  const navigatePath=useNavigate();
+  const navigateToPage=()=>{
+    setTimeout(()=>{
+      navigatePath('/products');
+    },500)
   }
     const productBoxList  =useRef();
     const productDetails = [
@@ -69,7 +76,9 @@ const ProductContainer = () => {
     {  productDetails.map((eachProduct ,idx) => {
 
 return(
-        <li className="product-box-list-item" ref={ productBoxList  } key={idx}>          {/* <img src="dsndhgh" alt="product-img">
+        <li onClick={()=>{
+          navigateToPage()
+        }} className="product-box-list-item" ref={ productBoxList  } key={idx}>          {/* <img src="dsndhgh" alt="product-img">
                  </img>*/}
           <h3 className="product-name">{eachProduct.name}</h3>
           {/* <img key={idx}
