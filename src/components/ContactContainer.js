@@ -76,7 +76,7 @@ const ContactContainer = () => {
           >
             <form className="contact-box-form" onSubmit={sendInitialEmail}>
               <h4 className="contact-head">Quick Contact</h4>
-              {alertt && <div color="success">{alertt}</div>}
+              {alertt && <div style={{fontSize:"18px"}} color="success">{alertt}</div>}
               <input
                 type="email"
                 name="from_email"
