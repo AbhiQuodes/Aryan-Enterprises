@@ -113,7 +113,7 @@
     flex-direction: column;
     gap: 25px;
     padding: 30px 5px;
-    min-width: 300px;
+    min-width: 350px;
   }
   .each-achievement-img {
     max-width: 250px;
