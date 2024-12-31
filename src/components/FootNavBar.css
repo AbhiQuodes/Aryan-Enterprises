@@ -89,9 +89,6 @@
   }
 }
 
-.aryan-logo:hover {
- background-color: grey;
-}
 
 @media (max-width: 600px) {
   .foot-nav-container {
