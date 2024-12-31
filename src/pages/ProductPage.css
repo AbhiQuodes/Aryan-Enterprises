@@ -26,7 +26,7 @@
     width:fit-content;
 padding:10px 5px;
 /* background-color: #fff; */
-background-color: beige;
+background: linear-gradient(#f3e9e97a, rgba(213, 213, 207, 0.199));
 border:2px solid grey;
 color:grey;
 border-radius: 8px;
