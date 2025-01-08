@@ -106,7 +106,7 @@ const ProductContainer = () => {
           })}
         </ul>
         <NavLink to="/products">
-          <h4 className="link-more-products">more products..</h4>
+          <h4 className="link-more-products">View more products..</h4>
         </NavLink>
       </div>
     </div>
