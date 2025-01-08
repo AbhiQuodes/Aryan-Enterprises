@@ -59,35 +59,35 @@ const ProductContainer = () => {
     }
   };
   return (
-  <div className="container-wrapper">
-    <div
-      className="product-container"
-      data-aos="fade"
-      data-aos-delay="250"
-      data-aos-duration="800"
-      data-aos-easing="ease-in-sine"
-    >
-      <div className="product-box-title">
-        <NavLink to="/products">
-          <h2 className="product-box-title">Our Products</h2>
-        </NavLink>
-      </div>
-      <ul className="product-box-list">
-        {productDetails.map((eachProduct, idx) => {
-          return (
-            <li
-              onClick={() => {
-                navigateToPage();
-              }}
-              className="product-box-list-item"
-              ref={productBoxList}
-              key={idx}
-            >
-              {" "}
-              {/* <img src="dsndhgh" alt="product-img">
+    <div className="container-wrapper">
+      <div
+        className="product-container"
+        data-aos="fade"
+        data-aos-delay="250"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-sine"
+      >
+        <div className="product-box-title">
+          <NavLink to="/products">
+            <h2 className="product-box-title">Our Products</h2>
+          </NavLink>
+        </div>
+        <ul className="product-box-list">
+          {productDetails.map((eachProduct, idx) => {
+            return (
+              <li
+                onClick={() => {
+                  navigateToPage();
+                }}
+                className="product-box-list-item"
+                ref={productBoxList}
+                key={idx}
+              >
+                {" "}
+                {/* <img src="dsndhgh" alt="product-img">
                  </img>*/}
-              <h3 className="product-name">{eachProduct.name}</h3>
-              {/* <img key={idx}
+                <h3 className="product-name">{eachProduct.name}</h3>
+                {/* <img key={idx}
             ref={dropDownImg}
             src={dropDown}
             alt="dropDown-box-arrow"
@@ -96,20 +96,20 @@ const ProductContainer = () => {
             handleDropDownClick(event);
            }}
           ></img> */}
-              <img
-                className="product-image"
-                src={eachProduct.image}
-                alt="product-img"
-              ></img>
-            </li>
-          );
-        })}
-      </ul>
-      <NavLink to="/products">
+                <img
+                  className="product-image"
+                  src={eachProduct.image}
+                  alt="product-img"
+                ></img>
+              </li>
+            );
+          })}
+        </ul>
+        <NavLink to="/products">
           <h4 className="link-more-products">more products..</h4>
         </NavLink>
+      </div>
     </div>
-    </div>  
   );
 };
 

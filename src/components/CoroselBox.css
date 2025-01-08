@@ -1,6 +1,6 @@
 .corosel-container {
   /* margin-top: 100px; */
-  padding-top:100px ;
+  padding-top: 100px;
   /* min-height: 350px; */
   min-height: fit-content;
   max-height: fit-content;
@@ -46,7 +46,6 @@
   height: 325px;
   display: none;
   border-radius: 15px;
-
 }
 .over-lay-text {
   font-size: 50px;
@@ -96,7 +95,7 @@
 @media (min-width: 501px) and (max-width: 601px) {
   .corosel-container {
     min-height: fit-content;
-    padding-top:100px ;
+    padding-top: 100px;
   }
   .over-lay-text {
     font-size: 40px;
@@ -141,7 +140,7 @@
 
 @media (max-width: 1000px) and (min-width: 601px) {
   .corosel-container {
-    padding-top:100px ;
+    padding-top: 100px;
   }
   .over-lay-text {
     font-size: 40px;
@@ -211,7 +210,7 @@
   }
   .corosel-container {
     padding: 0px;
-    padding-top:80px ;
+    padding-top: 80px;
     min-height: fit-content;
   }
   .slick-next,
