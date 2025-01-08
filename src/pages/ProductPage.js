@@ -291,6 +291,19 @@ const ProductPage = () => {
         }}
       ></LoadingBar>
       <HeaderBar handleHeadLinksLoader={handleHeadLinksLoader}></HeaderBar>
+      <div className="product-menu-bar">
+        <ul className="menu-bar-list">
+          <li className="menu-bar-list-item">
+            Gauge Tools
+          </li>
+          <li className="menu-bar-list-item">
+            Measuring Tools
+          </li>
+          <li className="menu-bar-list-item">
+            Plunger Tools
+          </li>
+        </ul>
+      </div>
       <div className="container">
         <section
           className="product-container page-product-container"
