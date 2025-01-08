@@ -30,8 +30,9 @@
   position: relative;
   left: 55px;
   color: rgb(241, 234, 234);
-  letter-spacing: 1.5px;
+  letter-spacing: 1.15px;
   scale: 1.22;
+  font-weight: 600;
 }
 
 .head-box-list-arrow {
@@ -144,9 +145,10 @@
     position: relative;
     font-style: 'open san';
     /* left: 5vw;  */
-    left: 20px;
+    left: 40px;
     letter-spacing: 0.5px;
   }
+
 
   .head-list {
     display: none;

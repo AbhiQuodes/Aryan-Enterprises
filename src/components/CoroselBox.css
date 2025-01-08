@@ -81,8 +81,8 @@
   width: 100%;
   border-radius: 10px;
   mix-blend-mode: screen;
-  min-height: 325px;
-  max-height: 325px;
+  min-height: 333px;
+  max-height: 333px;
 }
 .corosel-box:hover .over-lay {
   display: flex;

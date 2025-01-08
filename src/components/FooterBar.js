@@ -115,7 +115,7 @@ const FooterBar = () => {
             </a>
             <div className="list-item-box-content">
               <a
-                href="www.google.com"
+                href="https://www.google.com"
                 style={{ textDecoration: "none" }}
                 className="list-item-box-content-value"
               >
@@ -128,7 +128,7 @@ const FooterBar = () => {
               </a>
 
               <a
-                href="www.facebook.com"
+                href="https://www.facebook.com"
                 style={{ textDecoration: "none" }}
                 className="list-item-box-content-value"
               >
@@ -141,7 +141,7 @@ const FooterBar = () => {
               </a>
 
               <a
-                href="www.instagram.com"
+                href="https://www.instagram.com"
                 style={{ textDecoration: "none" }}
                 className="list-item-box-content-value"
               >

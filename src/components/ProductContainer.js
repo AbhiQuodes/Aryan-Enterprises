@@ -5,7 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
 import dropDown from "../images/dropDown.png";
-import MeasuringTools from "../images/MeasuringTools.jpeg";
+import measurementTool10 from "../images/measurement10.jpg";
 import GrindingWheel from "../images/GrindingWheel.jpeg";
 import CuttingTools from "../images/CuttingTools.jpeg";
 import HandTools from "../images/HandTools.jpeg";
@@ -29,11 +29,11 @@ const ProductContainer = () => {
   const navigateToPage = () => {
     setTimeout(() => {
       navigatePath("/products");
-    }, 500);
+    }, 100);
   };
   const productBoxList = useRef();
   const productDetails = [
-    { name: "Measuring Tools", image: MeasuringTools },
+    { name: "Measuring Tools", image: measurementTool10 },
     { name: "Grinding Wheel", image: GrindingWheel },
     { name: "Cutting Tools", image: CuttingTools },
     { name: "Hand Tools", image: HandTools },
@@ -59,9 +59,11 @@ const ProductContainer = () => {
     }
   };
   return (
-    <section
+  <div className="container-wrapper">
+    <div
       className="product-container"
       data-aos="fade"
+      data-aos-delay="250"
       data-aos-duration="800"
       data-aos-easing="ease-in-sine"
     >
@@ -103,7 +105,11 @@ const ProductContainer = () => {
           );
         })}
       </ul>
-    </section>
+      <NavLink to="/products">
+          <h4 className="link-more-products">more products..</h4>
+        </NavLink>
+    </div>
+    </div>  
   );
 };
 
