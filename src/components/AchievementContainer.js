@@ -60,7 +60,7 @@ const AchievementContainer = () => {
         data-aos-easing="ease-in-sine"
         className="achievement-text"
       >
-        <span style={{ color: "black", fontSize: "25px" }}>At </span> Aryan
+        <span >At </span> Aryan
         Enterprises, our journey has been marked by remarkable achievements and
         unwavering dedication to excellence in global trade. As a trusted bridge
         between buyers and sellers of imported and exported products, we have
