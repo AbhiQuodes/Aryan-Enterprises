@@ -160,9 +160,9 @@
     left: 5px !important;
 
   }
-  /* .l1{
-    /* left:-1px !important; */
- /* } */
+  .l1{
+    left:-3.5px !important;
+  }
 
   .foot-nav-bar-icons:hover .foot-nav-bar-icon-label {
     display: inline-block;

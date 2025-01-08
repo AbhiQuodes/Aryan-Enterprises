@@ -29,7 +29,7 @@
         padding:0px 0px 10px 0px;
         /* border: 2px solid rgba(12, 4, 4, 0.29); */
         min-height: 230px; 
-       border: 1px solid rgba(165, 42, 42, 0.023);
+       border: 1px solid  #cec3c386;;
 
     }
     .product-contact-box-list-item:hover{
