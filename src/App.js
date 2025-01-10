@@ -24,6 +24,7 @@ function App() {
     if(showInstallBox)
     {
       setShowInstallBox(false);
+      alert('click not touch')
       pageRef.current.removeEventListener("touchstart",handleInstallDisplay);
 
     }
