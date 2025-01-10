@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect,useState,useRef } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import DashboardPage from "./pages/DashboardPage.js";
@@ -10,6 +10,7 @@ import appLogoImg from './images/appLogo.png'
 
 function App() {
   const displayWidth = window.innerWidth;
+  const pageRef = useRef();
   const [deferredPrompt ,setDeferredPrompt] = useState(null);
   const [showInstallBox,setShowInstallBox]=useState(false);
   useEffect(()=>{
@@ -23,15 +24,27 @@ function App() {
     if(showInstallBox)
     {
       setShowInstallBox(false);
+      pageRef.current.removeEventListener("touchstart",handleInstallDisplay);
+
     }
 
   }
+  useEffect(()=>{
+
+    pageRef.current.addEventListener("touch",handleInstallDisplay);
     if(displayWidth<= 600)
-    {
-      setTimeout(()=>{
-        setShowInstallBox(true)
-      }, 1000); 
-    }
+      {
+        setTimeout(()=>{
+          setShowInstallBox(true)
+        }, 1000); 
+      }
+      return ()=>{
+        clearTimeout(()=>{
+          setShowInstallBox(true)
+        });
+        pageRef.current.removeEventListener("touchstart",handleInstallDisplay);
+      }     
+    });
 
   const handleInstall =()=>{
     if(deferredPrompt){
@@ -40,7 +53,6 @@ function App() {
         if(choiceResult.outcome === "accepted")
         {
           console.log("User accepted the install prompt");
-
         }
         setDeferredPrompt(null);
       });
@@ -48,7 +60,7 @@ function App() {
   };
   return (
     <div className="App">
-      <div onClick={handleInstallDisplay}>
+      <div onClick={handleInstallDisplay} ref={pageRef}>
       <Routes>
         <Route path="/" element={<DashboardPage />}></Route>
         <Route path="/achievements" element={<AchievementPage />}></Route>
