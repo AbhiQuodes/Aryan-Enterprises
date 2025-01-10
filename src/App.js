@@ -42,8 +42,9 @@ function App() {
       </Routes>
       <div>
         <h1>Welcome to Aryan Enterprises</h1>
+        {alert(deferredPrompt)}
         {
-          deferredPrompt &&(
+                    deferredPrompt &&(
             <button onClick={handleInstall}> Install App</button>
           )
         }
