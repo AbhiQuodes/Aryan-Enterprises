@@ -31,7 +31,7 @@ function App() {
   }
   useEffect(()=>{
 
-    pageRef.current.addEventListener("touch",handleInstallDisplay);
+    pageRef.current.addEventListener("touchstart",handleInstallDisplay);
     if(displayWidth<= 600)
       {
         setTimeout(()=>{
@@ -44,7 +44,7 @@ function App() {
         });
         pageRef.current.removeEventListener("touchstart",handleInstallDisplay);
       }     
-    });
+    },[]);
 
   const handleInstall =()=>{
     if(deferredPrompt){
