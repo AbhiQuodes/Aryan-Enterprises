@@ -31,7 +31,7 @@ function App() {
   }
   useEffect(()=>{
 
-    pageRef.current.addEventListener("scroll",handleInstallDisplay);
+    pageRef.current.addEventListener("touchstart",handleInstallDisplay);
     if(displayWidth<= 600)
       {
         setTimeout(()=>{
@@ -42,7 +42,7 @@ function App() {
         clearTimeout(()=>{
           setShowInstallBox(true)
         });
-        pageRef.current.removeEventListener("scroll",handleInstallDisplay);
+        pageRef.current.removeEventListener("touchstart",handleInstallDisplay);
       }     
     },[]);
 
