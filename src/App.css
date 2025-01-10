@@ -1,7 +1,7 @@
 .install-box{
     display:flex;
     gap:30px;
-    width:300px;
+    width:320px;
     padding:10px 20px;
     background-color: rgb(40, 33, 33);
     color:#fff;
@@ -9,7 +9,7 @@
     justify-content: space-evenly;
     border-radius: 14px;
     position:fixed;
-    top:20px;
+    top:10px;
     left:calc(50vw - 150px);
     z-index: 300;
     transition: all 0.5s linear 0s;
