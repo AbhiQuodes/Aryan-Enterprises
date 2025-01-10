@@ -75,7 +75,6 @@
   transform: rotate(90deg);
 }
 .product-image {
-  /* min-width:60%; */
   height: 140px;
   max-width: 170px;
   transition: all 0.5s linear 0s;
@@ -91,7 +90,6 @@
   .product-image {
     height: 80px;
     max-width: 110px;
-    /* display: none; */
   }
   .product-box-list {
     gap: 20px;
@@ -99,7 +97,7 @@
     align-items: center;
   }
   .product-box-title {
-    font-size: 28px;
+    font-size: 24px;
   }
   .product-box-list-arrow {
     height: 25px;

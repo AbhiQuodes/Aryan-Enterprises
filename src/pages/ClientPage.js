@@ -25,7 +25,6 @@ const ClientPage = () => {
   useEffect(() => {
     handleHeadLinksLoader();
     // window.scrollTo(0, 0);
-
   }, []);
   return (
     <div>
@@ -40,10 +39,11 @@ const ClientPage = () => {
         }}
       ></LoadingBar>
       <HeaderBar handleHeadLinksLoader={handleHeadLinksLoader}></HeaderBar>
-      <div className="container"> <ClientContainer></ClientContainer>
+      <div className="container">
+        {" "}
+        <ClientContainer></ClientContainer>
       </div>
       <FooterBar></FooterBar>
-    
     </div>
   );
 };

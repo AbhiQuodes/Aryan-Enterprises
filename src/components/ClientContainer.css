@@ -118,17 +118,23 @@
     min-width: 90vw;
   }
   .client-box-title {
-    font-size: 28px;
+    font-size: 24px;
   }
   .client-box-list-item,
   .client-box-list {
     flex-direction: column;
     gap: 25px;
   }
-  .client-box-list-item,
-  .client-box-list-item-text {
+  .client-box-list-item{
     padding: 20px 20px;
     font-size: 16px;
+  }
+  .client-box-list-item-text {
+     width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.32;
+
   }
 
   .client-icon-img {

@@ -65,7 +65,7 @@ const ContactContainer = () => {
       <div className="contact-page">
         <div className="contact-container">
           <div className="page-heading">
-            <h2 className="font-bold">Contact us</h2>
+            <h2 className="contact-title">Contact us</h2>
             <hr />
           </div>
           <div
@@ -105,17 +105,9 @@ const ContactContainer = () => {
                 name="message"
                 onChange={(e) => setMessage(e.target.value)}
               ></input>
-              <div className="btn-box">
+              <div className="contact-btn-box">
                 <button className="email-submit-btn">Submit</button>
               </div>
-
-              {/* <div className="msg-display-box">
-                  <p>
-                    We value your feedback and suggestions! If you have any
-                    questions, comments, or inquiries, please do not hesitate to
-                    reach out to us. Our team is here to assist you.
-                  </p>
-                </div> */}
             </form>
           </div>
         </div>

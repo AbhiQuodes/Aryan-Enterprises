@@ -40,9 +40,10 @@ const ContactUsPage = () => {
         }}
       ></LoadingBar>
       <HeaderBar handleHeadLinksLoader={handleHeadLinksLoader}></HeaderBar>
-      <div className="container"><ContactContainer></ContactContainer></div>
+      <div className="container">
+        <ContactContainer></ContactContainer>
+      </div>
       <FooterBar></FooterBar>
-     
     </div>
   );
 };
