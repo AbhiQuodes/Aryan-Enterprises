@@ -41,7 +41,7 @@ function App() {
         <Route path="/products" element={<ProductPage />}></Route>
       </Routes>
       <div>
-{/*         <h1>Welcome to Aryan Enterprises</h1> */}
+        <h1>Welcome to Aryan Enterprises</h1>
         {
           deferredPrompt &&(
             <button onClick={handleInstall}> Install App</button>
